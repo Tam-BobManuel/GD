@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arsenica-trial');
+                
+:root{
+    --primary-font: "Lato", sans-serif;
+    --secondary-font: "Arsenica Trial", sans-serif;
+      /* COLOURS */
+  /* PRIMARY */
+    --DarkGreen: #102128;
+    --Black: #181716;
+
+  /* SECONDARY */
+    --Gold: #E39204;
+
+  /* NEUTRAL */
+      --DefaultBG: #f8f8f8;
+      --aboveFooterBG: #F4F4F4;
+      --FooterBG: #E7E7E7;
+  /* BODY PADDING */
+      --padding: 0 10% 0 10%;
+}
+
+body{
+    background-color: var(--DefaultBG);
+    padding: var(--padding);
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+nav{
+    font-family: var(--primary-font);
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    color: var(--DarkGreen);
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+    /* NAVIGATION LIST ITEMS  */
+nav > ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+.ulFi{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+.ulFi > li{
+    flex: 1;
+}
+.ulFi > li > a , .ulSec > li > a{
+    text-decoration: none;
+    color: var(--DarkGreen);
+}
+.ulFi > li > a:hover, .ulSec > li > a:hover{
+    color: var(--Gold);
+}
+ul > li{
+    margin: 5px;
+}
+.ulSec{
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ulSec > button{
+    width: Hug (159px);
+    height: Hug (56px);
+    padding: 16px, 36px, 16px, 36px;
+    border-radius: 50px;
+    border: 1px  solid var(--DarkGreen);
+    gap: 10px;
+}
+.HertoText{
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+    flex: 1;
+}
+.HeroImg{
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+    flex: 1;
+}
+.HeroText > h1{
+    font-family: var(--secondary-font);
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 70px;
+}
+.HeroText > p{
+    font-weight: 300;
+    font-size: xx-large;
+    margin-bottom: 70px;
+}
+.HeroText > .Buttons > button{
+    background-color: var(--DarkGreen);
+    color: var(--DefaultBG);
+    width: Hug (159px);
+    height: Hug (56px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px  solid var(--DarkGreen);
+    gap: 10px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.HeroText > .Buttons > button:hover{
+    cursor: pointer;
+}
+
+.HeroSection{
+    display: flex;
+}
+@media screen and (max-width: 590px) {
+    .HertoText{
+        display: inline-block;
+        width: 49%;
+        box-sizing: border-box;
+        flex: 1;
+    }
+    .HeroImg{
+        display: inline-block;
+        width: 49%;
+        box-sizing: border-box;
+        flex: 1;
+        display: none;
+    }
+    .HeroText > h1{
+        font-family: var(--secondary-font);
+        font-size: xx-large;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .HeroText > p{
+        font-weight: 300;
+        font-size: x-large;
+    }
+    .HeroText > .Buttons > button{
+        background-color: var(--DarkGreen);
+        color: var(--DefaultBG);
+        width: Hug (59px);
+        height: Hug (56px);
+        padding: 5px 10px;
+        border-radius: 50px;
+        border: 1px  solid var(--DarkGreen);
+        gap: 5px;
+        margin: 2px;
+    }
+    
+    .HeroText > .Buttons > button:hover{
+        cursor: pointer;
+    }
+    
+    .HeroSection{
+        display: flex;
+    }
+
+    .ulFi{
+        width: 70%;
+        display: flex;
+        text-align: left;
+        margin: none;
+    }
+    .ulFi > li{
+        flex: 1;
+    }
+    .ulFi > li > a , .ulSec > li > a{
+        text-decoration: none;
+        color: var(--DarkGreen);
+    }
+    .ulFi > li > a:hover, .ulSec > li > a:hover{
+        color: var(--Gold);
+    }
+    ul > li{
+        margin: 2px;
+    }
+    .ulSec{
+        width: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .ulSec > button{
+        width: Hug (4px) !important;
+        height: Hug (5px) !important;
+        padding: 5px, 10px, 5px, 10px !important;
+        border-radius: 50px !important;
+        border: 1px  solid var(--DarkGreen) !important;
+        gap: 10px !important;
+    }
+    body{
+        background-color: var(--DefaultBG);
+        padding: 2%;
+        box-sizing: border-box;
+    }
+}
